@@ -1,0 +1,12 @@
+---
+- hosts: debian
+  become: yes
+  gather_facts: yes
+  tasks:
+    - name: Update packages
+      apt:
+        state: latest
+        update_cache: yes
+        upgrade: yes
+        autoclean: yes
+        autoremove: yes
