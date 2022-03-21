@@ -5,10 +5,8 @@ localhost ansible_connection=local
 asus ansible_port=49469 ansible_host=192.168.2.109 ansible_user=eagle
 
 [debian]
-asus ansible_port=49469 ansible_host=192.168.2.109 ansible_user=eagle
 pihole ansible_port=49469 ansible_host=192.168.2.108 ansible_user=eagle
 raspberrypi ansible_port=49469 ansible_host=192.168.2.25 ansible_user=eagle
 
 [proxmox]
-asus ansible_port=49469 ansible_host=192.168.2.109 ansible_user=eagle
 pihole ansible_port=49469 ansible_host=192.168.2.108 ansible_user=eagle
