@@ -8,8 +8,13 @@ install_ansible() {
     ssh-keygen
     chmod 700 /home/eagle/.ssh/id_rsa
     ssh-copy-id -p 49469 coganlowan@192.168.2.1
-    ssh-copy-id -p 49469 eagle@192.168.2.25
-    ssh-copy-id -p 49469 eagle@192.168.2.108
+    ssh-copy-id -p 22 root@192.168.2.11
+    ssh-copy-id -p 22 root@192.168.2.12
+    ssh-copy-id -p 22 root@192.168.2.13
+    ssh-copy-id -p 22 eagle@192.168.2.14
+    ssh-copy-id -p 49469 root@192.168.2.15
+    ssh-copy-id -p 22 eagle@192.168.2.16
+    ssh-copy-id -p 49469 eagle@192.168.2.18
 
 }
 
