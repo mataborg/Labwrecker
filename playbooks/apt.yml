@@ -7,6 +7,5 @@
       apt:
         state: latest
         update_cache: yes
-        upgrade: full
-        autoclean: yes
+        upgrade: dist
         autoremove: yes
