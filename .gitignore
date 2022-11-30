@@ -1,3 +1,6 @@
 tmp
 cp
 roles
+collections
+galaxy_cache
+galaxy_token
