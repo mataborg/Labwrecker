@@ -1,0 +1,32 @@
+---
+- hosts: local
+  become: no
+  gather_facts: yes
+  tasks:
+    - name: Update servarr hook
+      uri:
+        url: https://portainer.local.zenbasedtea.xyz/api/stacks/webhooks/592fa676-f8e4-4f05-a816-2ca41892c58f
+        method: POST
+        status_code: 204, -1
+        timeout: 180
+
+    - name: Update netwerk hook
+      uri:
+        url: https://portainer.local.zenbasedtea.xyz/api/stacks/webhooks/7725136d-76df-4284-a5d8-71a34d1d666e
+        method: POST
+        status_code: 204, -1
+        timeout: 180
+
+    - name: Update heimdall hook
+      uri:
+        url: https://portainer.local.zenbasedtea.xyz/api/stacks/webhooks/fb6a4cf1-96e8-46a4-a3af-8cd21c5b6801
+        method: POST
+        status_code: 204, -1
+        timeout: 180
+
+    - name: Update nextcloud hook
+      uri:
+        url: https://portainer.local.zenbasedtea.xyz/api/stacks/webhooks/70dab545-2f71-4345-9a2e-10403e95b798
+        method: POST
+        status_code: 204, -1
+        timeout: 180
