@@ -30,3 +30,12 @@
         method: POST
         status_code: 204, -1
         timeout: 180
+
+    - name: Update vaultwarden hook
+      uri:
+        url: https://portainer.local.zenbasedtea.xyz/api/stacks/webhooks/f1397778-b4ca-400c-ba30-1c9d6f2ededc
+        method: POST
+        status_code: 204, -1
+        timeout: 180
+
+        
