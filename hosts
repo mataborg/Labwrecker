@@ -5,7 +5,6 @@ localhost ansible_connection=local
 ax86u ansible_port=49469 ansible_host=192.168.2.1 ansible_user=coganlowan
 
 [servers]
-proxpve2 ansible_port=22 ansible_host=192.168.2.11 ansible_user=root
 proxpve1 ansible_port=22 ansible_host=192.168.2.13 ansible_user=root
 bigboxmart ansible_port=49469 ansible_host=192.168.2.15 ansible_user=root
 
@@ -15,7 +14,6 @@ bigboxmart ansible_port=49469 ansible_host=192.168.2.15 ansible_user=root
 [debian]
 piholelxc ansible_port=22 ansible_host=192.168.2.14 ansible_user=eagle
 pizero ansible_port=22 ansible_host=192.168.2.16 ansible_user=eagle
-proxpve2 ansible_port=22 ansible_host=192.168.2.11 ansible_user=root
 proxpve1 ansible_port=22 ansible_host=192.168.2.13 ansible_user=root
 docker ansible_port=49469 ansible_host=192.168.2.18 ansible_user=eagle
 localhost ansible_connection=local
