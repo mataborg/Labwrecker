@@ -4,4 +4,4 @@
   become: no
 
   roles:
-    - proxmox_autoinstall
+    - role: proxmox_autoinstall

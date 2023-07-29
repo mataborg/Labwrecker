@@ -2,7 +2,8 @@
 
 install_ansible() {
 
-    apt install ansible -y
+    apt install pipx -y
+    pipx install --include-deps ansible
     git clone --depth 1 https://github.com/mataborg/labwrecker ~/.ansible/
     git clone --depth 1 https://github.com/mataborg/ansible-role-proxmox_autoinstall ~/.ansible/roles/
     ssh-keygen
