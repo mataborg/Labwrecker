@@ -4,7 +4,6 @@
   gather_facts: yes
   tasks:
     - name: Update packages
-      ansible.builtin.dnf:
+    ansible.builtin.dnf:
+        name: "*"
         state: latest
-        update_cache: true
-        upgrade_only: true
