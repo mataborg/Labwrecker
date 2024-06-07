@@ -1,0 +1,10 @@
+---
+- hosts: fedora
+  become: yes
+  gather_facts: yes
+  tasks:
+    - name: Update packages
+      ansible.builtin.dnf:
+        state: latest
+        update_cache: true
+        upgrade_only: true
