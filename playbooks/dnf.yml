@@ -7,3 +7,5 @@
     ansible.builtin.dnf:
         name: "*"
         state: latest
+        allowerasing: true
+        update_cache: true

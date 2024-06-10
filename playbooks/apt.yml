@@ -4,8 +4,10 @@
   gather_facts: yes
   tasks:
     - name: Update packages
-      apt:
+      ansible.builtin.apt:
         state: latest
         update_cache: yes
         upgrade: dist
         autoremove: yes
+        autoclean: yes
+        clean: yes
